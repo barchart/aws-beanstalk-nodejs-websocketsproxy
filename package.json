@@ -1,0 +1,18 @@
+{
+  "author": {
+    "name": "Eero Pikat",
+    "email": "eero.pikat@barchart.com",
+    "url": "http://www.barchart.com"
+  },
+  "name": "proxyserver-cluster",
+  "description": "Proxy Server for websockets to non-websockets services",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "~4.9.0",
+    "ws": "0.4.x"
+  }
+}
