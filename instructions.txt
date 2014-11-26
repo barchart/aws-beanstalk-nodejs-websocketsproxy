@@ -29,4 +29,9 @@ For the development environment, a few changes from the defaults:
 
 For the production environment, a few changes from the defaults:
 * Proxy should be none. (default is nginx)
-* Load Balancer should be TCP, port 80. (default is HTTP)
+* Load Balancer should be:
+	- TCP, port 80. (default is HTTP)
+	- SSL, port 443. (default is HTTPS). Make sure you use the
+			star.aws.barchart.com key, and make sure that there is an
+			appropriate entry in Route53 mapping XXX.aws.barchart.com to
+			the load balancer.
