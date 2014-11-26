@@ -1,0 +1,32 @@
+Instructions for AWS:
+==============================================================================
+
+To create the environment, do:
+
+eb init
+	AWS Access Key ID ....
+	AWS Secret Access Key ....
+		(if you don't have these, create a new one)
+	Available service region: 1.) US East (Virginia)
+	Application Name: jerqproxy
+	Application Environment: jerqproxy-dev
+	Environment Tier: 1.) WebServer
+	Solution Stack: 19.) 32bit Amaxon Linux 2014.03 v1.0.6 running Node.js
+	Environment Type: 2.) Single Instance
+	Create an RDS DB Instance: n (no)
+	Instance Profile: 1.) default
+
+eb start
+
+Will create the application, and environment. This means that all eb
+interactions are with the dev instance.
+
+Create a production instance which is LoadBalanced from the AWS console.
+
+For the development environment, a few changes from the defaults:
+* Proxy should be none. (default is nginx)
+
+
+For the production environment, a few changes from the defaults:
+* Proxy should be none. (default is nginx)
+* Load Balancer should be TCP, port 80. (default is HTTP)
