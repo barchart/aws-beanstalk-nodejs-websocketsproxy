@@ -12,7 +12,8 @@
     "start": "node app"
   },
   "dependencies": {
-    "express": "~4.9.0",
+    "express": "4.9.0",
     "ws": "0.4.x"
   }
 }
+git st
