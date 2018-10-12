@@ -30,7 +30,7 @@ var settings = {
 	"documentRoot" : __dirname,
 	"proxies" : {
 		"jerq" : {
-			"server" : "qs-us-e-01.aws.barchart.com",
+			"server" : "qs03.aws.barchart.com",
 			"port" : 7500
 		}
 	}
