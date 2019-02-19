@@ -13,6 +13,6 @@
   },
   "dependencies": {
     "express": "4.9.0",
-    "ws": "0.4.x"
+    "ws": ">=6.1.X"
   }
 }
